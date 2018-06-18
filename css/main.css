@@ -1,1 +1,231 @@
-/* Los estilos de tu proyecto */
+nav {
+  background: #ffffff;
+  border: 0;
+}
+
+.logo {
+  width: 70%;
+}
+
+nav ul a {
+  color: black;
+}
+
+.menu {
+  color: black;
+}
+
+/* Sección principal */
+
+.main {
+  background-image: url("../assets/images/taxi.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+}
+
+.box {
+    background-color: #f7b617;
+    color: white;
+    padding: 28px 0px 40px 25px;
+    margin-left: 10px;
+}
+
+.box h2 {
+    line-height: 22px;
+    font-size: 25px;
+}
+
+.row .col {
+    padding: 0px;
+}
+
+.row {
+    margin-bottom: 0;
+}
+
+.inline {
+    display: inline;
+}
+
+  .center {
+transform: translateY(70%);
+}
+
+.mobile {
+  display: block;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.lg-bco {
+    height: 16px;
+    margin-left: 20px;
+}
+
+.btn-default {
+    background-color: #fff;
+    border-color: #ccc;
+    border-radius: 5px;
+    color: #333;
+    display: block;
+    font-weight: 800;
+    margin-top: 2.7em;
+    margin-left: 40px;
+}
+
+/* La nueva app */
+
+.yellow {
+  background: #f7b617 !important;
+}
+
+h5 {
+  color: white;
+}
+
+.iphone {
+    margin: 40px 20px 30px 20px;
+    border: 1px solid white;
+    padding: 40px;
+}
+
+.cel {
+    width: 85%;
+    transform: translateX(20%);
+}
+
+.text-iphone {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+/* Sección "Conduce cuando quieras" */
+
+.Drive {
+  background-image: url("../assets/images/conduce.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+}
+
+.info {
+  margin: 90px 0px 0px 20px;
+  font-size: 18px;
+}
+
+.info button {
+  font-size: 15px;
+}
+
+.Drive-box {
+  background: rgba(0, 0, 0, 0.5);
+  height: 430px;
+}
+
+p {
+  color: white;
+}
+
+.btn-warning {
+  background-color: #f7b617;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 12px;
+  width: 300px;
+}
+
+/* Sección de tarifas */
+
+.rates{
+  padding: 50px 0px 0px;
+}
+
+.rates-container {
+  margin-bottom: 60px;
+}
+
+.input-text {
+  display: inline;
+}
+
+.img-consults {
+  display: inline;
+}
+
+#cinput {
+    margin-left: 25px;
+    padding-top: 1px;
+    font-size: 12px;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    height: 20px;
+}
+
+#cinput:focus {
+    outline: none;
+}
+
+.input-text::-moz-placeholder {
+    color: white;
+}
+
+.input-text:-ms-input-placeholder {
+    color: white;
+}
+
+.input-text::-webkit-input-placeholder {
+    color: white;
+}
+
+.rates p {
+    margin-bottom: 25px;
+}
+
+.rates button {
+    padding: 2px 25px;
+    margin-left: 80px;
+}
+
+.map-container {
+    padding: 10px;
+    border: 1px solid white;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+/* Sección footer */
+
+footer {
+  background-color: #2b2b2b;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  color: white;
+}
+
+footer figure {
+    display: inline-inline-block;
+    float: right;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    overflow: auto;
+}
+
+.icons li {
+    display: inline-block;
+    margin: 5px;
+}
