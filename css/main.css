@@ -19,7 +19,7 @@ nav ul a {
 
 .main {
   background-image: url("../assets/images/taxi.jpg");
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   height: 540px;
 }
@@ -29,6 +29,19 @@ nav ul a {
     color: white;
     padding: 28px 0px 40px 25px;
     margin-left: 10px;
+}
+
+.box-l {
+    background-color: #f7b617;
+    color: white;
+    padding: 28px 0px 40px 25px;
+    margin-left: 10px;
+    /* margin-top: 20px; */
+}
+
+.box-l h2 {
+    line-height: 22px;
+    font-size: 25px;
 }
 
 .box h2 {
@@ -49,7 +62,7 @@ nav ul a {
 }
 
   .center {
-transform: translateY(70%);
+transform: translateY(40%);
 }
 
 .mobile {
@@ -244,4 +257,27 @@ hr {
 
 .copy {
   margin: 20px;
+}
+
+
+
+@media screen and (min-width: 1023px){
+  .lg-bco {
+    height: 25px;
+  }
+  iframe {
+    height: 300px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 600px;
+  }
+  .img-responsive {
+    margin-left: 30px;
+  }
+  .icons {
+    margin-left: 50px;
+  }
+  .copy {
+    margin-left: 50px;
+  }
 }
