@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
     <body>
+      <!--Navegador versión mobile-->
       <nav>
         <div class="container">
             <div class="nav-wrapper">
@@ -23,10 +24,11 @@
               </a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons menu">menu</i></a>
+              <!-- Navegador versión Desktop-->
               <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html"> Viaja </a></li>
-                <li><a href="badges.html"> Conduce </a></li>
-                <li><a href="collapsible.html">Inicia sesión </a></li>
+                <li><a href="#viaja"> Viaja </a></li>
+                <li><a href="#Conduce"> Conduce </a></li>
+                <li><a class="modal-trigger" href="#iniciosesion">Inicia sesión </a></li>
               </ul>
               <ul class="sidenav" id="mobile-demo">
                 <li><a href="sass.html">Sass</a></li>
@@ -40,6 +42,7 @@
       <section class="main">
         <div class="center mobile">
           <div class="row">
+            <!-- Comienza a viajar-Mobile* -->
             <div class="col s10 offset-s2">
               <div class="box hide-on-large-only">
                   <h2 class="bold">Comienza a viajar</h2>
@@ -50,19 +53,20 @@
                   </button>
                 </div>
               </div>
+              <!-- Comienza a viajar-Desktop -->
               <div class="col l5 offset-l7">
                 <div class="box-l hide-on-med-and-down">
                     <h2 class="bold">Disfruta del viaje</h2>
                     <h2 class="inline bold">Eres dueño de tu tiempo</h2>
                     <img class="inline lg-bco" src="assets/images/logoBlanco.png" alt="logo-blanco">
-                    <button type="button" class="btn btn-default">
-                      <span class="text-download">Registrate</span>
-                    </button>
+                    <a class="btn btn-default waves-effect waves-light btn modal-trigger" href="#modal-registrate">
+                      Regístrate
+                    </a>
                     <p> O bien</p>
                     <hr>
-                    <button type="button" class="btn btn-default">
-                      <span class="text-download">Conviertete en conductor</span>
-                    </button>
+                      <a class="btn btn-default waves-effect waves-light btn modal-trigger" href="#modal-conductor">
+                        Conviértete en conductor
+                      </a>
                   </div>
                 </div>
             </div>
@@ -70,6 +74,7 @@
         </div>
       </section>
       <section class="yellow">
+        <!-- App-Mobile -->
         <div class="view-mobile">
             <div class="row">
                 <div class="col s12 hide-on-large-only">
@@ -80,6 +85,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- App-Desktop -->
                 <div class="col l8 hide-on-med-and-down iphone">
                     <div class="">
                         <h5 class="aligncenter bold">Descarga la nueva app</h5>
@@ -109,6 +115,7 @@
         </div>
       </section>
       <section class="Drive">
+        <!-- Drive-Mobile -->
         <div class="mobile">
           <div class="row">
             <div class="col s12 l4 offset-l8 Drive-box">
@@ -120,7 +127,9 @@
                   LabCar es una opción flexible para alcanzar tus metas financieras
                 </p>
                 <p>
-						      <a class="btn btn-warning bold" href=""> Conviértete en conductor</a>
+                  <a class="btn btn-default waves-effect waves-light btn modal-trigger" href="#modal-conductor">
+                    Conviértete en conductor
+                  </a>
                 </p>
               </div>
             </div>
@@ -178,6 +187,128 @@
           </div>
         </div>
       </section>
+
+
+      <!-- *********** Ventanas Modales ****** -->
+
+   <!-- Modal  InicioSesion-->
+   <div id="iniciosesion" class="modal modal-turquoise">
+       <div class="modal-content">
+           <figure class="img-user">
+             <i id="user" class="large material-icons">account_box</i>
+           </figure>
+           <hr>
+           <div class="form-login">
+               <div class="row">
+                   <form class="col s12">
+                       <div class="row">
+                           <div class="input-field col s12">
+                               <i class="material-icons prefix">account_circle</i>
+                               <input id="icon_prefix" type="text" class="validate">
+                               <label for="icon_prefix">Email</label>
+                           </div>
+                           <div class="input-field col s12">
+                               <i class="material-icons prefix">lock</i>
+                               <input type="tel">
+                               <label for="icon_pass">Password</label>
+                           </div>
+                           <button class="btn-m  btn-warning boxcolor center">LOGING</button>
+                           <p class="forgot">Forgot Password?
+                               <span class="info">Click Here</span>
+                           </p>
+                       </div>
+                   </form>
+               </div>
+
+           </div>
+       </div>
+   </div>
+
+   <!-- Modal  Registrate-->
+   <div id="modal-registrate" class="modal gris">
+       <div class="modal-content registro">
+           <form>
+               <button class="btn-m btn-black  btn-block">¿Ya tienes una cuenta?</button>
+               <p class="center"> o crea una cuenta nueva</p>
+               <br>
+               <div class="row">
+                   <div class="col s6 col l6 inputname">
+                       <input type="text" placeholder="Nombre">
+                   </div>
+                   <div class="col s6 col l6 inputlastname">
+                       <input type="text" placeholder="Apellido">
+                   </div>
+               </div>
+               <input type="text" placeholder="Correo Electrónico: ejemplo@correo.mx">
+               <input type="text" placeholder="Teléfono">
+               <input type="text" placeholder="Contraseña">
+               <input type="text" placeholder="Ciudad">
+               <input type="text" placeholder="(Opcional) Código de Invitación">
+               <select class="btn-block">
+                   <option class="bold">¿Cómo te enteraste de nosotros?</option>
+               </select>
+               <button class="btn btn-send">
+                   <span class="bold">Enviar</span>
+               </button>
+           </form>
+       </div>
+
+   </div>
+
+   <!-- Modal  conductor-->
+   <div id="modal-conductor" class="modal white">
+       <div class="modal-content registro">
+
+           <form>
+               <div>
+                   <label>¿Tienes vehículo de 4 puertas?</label>
+                   <select>
+                       <option>si</option>
+                       <option>No</option>
+                   </select>
+               </div>
+               <div>
+                   <label>Marca</label>
+                   <select>
+                       <option selected>Elige la marca de tu vehiculo</option>
+                       <option>BMW</option>
+                       <option>FERRARI</option>
+                       <option>KIA</option>
+                   </select>
+                   <p class="text-marca">¿No ves tu vehículo en la lista?Envía un correo electrónico a</p>
+                   <p class="text-marca text-info bold">sociosmdv@uber.com</p>
+               </div>
+               <div>
+                   <label>Modelo: </label>
+                   <select>
+                       <option selected>Modelo1</option>
+                       <option>Modelo2</option>
+                   </select>
+               </div>
+               <div>
+                   <label>Año: </label>
+                   <select>
+                       <option selected>2017</option>
+                       <option>2016</option>
+                       <option>2015</option>
+                       <option>2014</option>
+                   </select>
+               </div>
+               <div>
+                   <label>Número de matrícula: </label>
+                   <input type="text" placeholder="Número de la matricula" />
+                   <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+               </div>
+
+               <button class="btn btn-info btn-block">
+                   <span class="bold textuppercase">Enviar</span>
+               </button>
+           </form>
+       </div>
+
+   </div>
+
+
       <footer>
         <div class="row hide-on-large-only">
           <div class="col s12">
