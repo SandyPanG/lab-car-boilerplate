@@ -261,47 +261,51 @@
 
            <form>
                <div>
-                   <label>¿Tienes vehículo de 4 puertas?</label>
-                   <select>
+                   <label class="txt-color lbl">¿Tienes vehículo de 4 puertas?</label>
+                   <select class="btn-block">
                        <option>si</option>
                        <option>No</option>
                    </select>
                </div>
                <div>
-                   <label>Marca</label>
-                   <select>
-                       <option selected>Elige la marca de tu vehiculo</option>
+                   <label class="txt-color lbl">Marca</label>
+                   <select class="btn-block">
+                       <option>Elige la marca de tu vehiculo</option>
                        <option>BMW</option>
                        <option>FERRARI</option>
                        <option>KIA</option>
                    </select>
-                   <p class="text-marca">¿No ves tu vehículo en la lista?Envía un correo electrónico a</p>
-                   <p class="text-marca text-info bold">sociosmdv@uber.com</p>
+                   <p class="text-marca envia">¿No ves tu vehículo en la lista? Envía un correo electrónico a</p>
+                   <a class="partner">sociosmdv@uber.com</a>
                </div>
+               <br>
                <div>
-                   <label>Modelo: </label>
-                   <select>
-                       <option selected>Modelo1</option>
+                   <label class="txt-color lbl">Modelo: </label>
+                   <select class="btn-block">
+                       <option>Modelo1</option>
                        <option>Modelo2</option>
                    </select>
                </div>
                <div>
-                   <label>Año: </label>
-                   <select>
-                       <option selected>2017</option>
+                   <label class="txt-color lbl">Año: </label>
+                   <select class="btn-block">
+                       <option>2017</option>
                        <option>2016</option>
                        <option>2015</option>
                        <option>2014</option>
                    </select>
                </div>
                <div>
-                   <label>Número de matrícula: </label>
-                   <input type="text" placeholder="Número de la matricula" />
-                   <p>La información de la matrícula ayuda a los clientes a identificar tu vehículo</p>
+                   <textarea for="textarea1" class="materialize-textarea txt-color area">Número de matrícula:</textarea>
+
+                   <p class="clients">La información de la matrícula ayuda a los clientes a identificar
+                     <br>
+                     tu vehículo
+                   </p>
                </div>
 
-               <button class="btn btn-info btn-block">
-                   <span class="bold textuppercase">Enviar</span>
+               <button class="btn btn-block send">
+                   <span class="bold">Enviar</span>
                </button>
            </form>
        </div>

@@ -419,10 +419,15 @@ select {
 }
 
 
-/* Form */
+/* Conductor */
 
 .registro {
-  background-color: #dddddd;
+  background-color: #a9a9a9;
+}
+
+.txt-color {
+  color: black;
+  font-weight:bolder;
 }
 
 .inputname {
@@ -431,4 +436,34 @@ select {
 
 .inputlastname {
     padding-left: 2px;
+}
+
+.lbl {
+  margin-left: 30%;
+}
+
+.envia {
+  color: gray;
+  margin-left: 30%;
+}
+
+
+.partner {
+  font-size: 13px;
+  margin-left: 30%;
+}
+
+.clients {
+  color: black;
+  font-size: 13px;
+  margin-left: 30%;
+}
+
+.send {
+  margin-left: 30%;
+  width: 50%;
+}
+
+.area {
+  width: 30%;
 }
